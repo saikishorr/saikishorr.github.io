@@ -34,13 +34,13 @@ nav{
 }
 
 .logo{
-    width: 350px;
+    width: 280px;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 10px;
 }
 
 nav ul li a{
@@ -86,7 +86,7 @@ nav ul li a:hover::after{
 /* ---------About --------- */
 
 #about{
-    padding: 80px 0;
+    padding: 40px 0 20px;
     color: #fff;
 }
 
@@ -117,7 +117,7 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 20px;
 }
 
 .tab-links{
@@ -162,7 +162,8 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
-    font-size: large;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 
@@ -543,3 +544,114 @@ nav .fas{
     pointer-events: none; /* Ensure the circle doesn't interfere with cursor events */
     z-index: 9999; /* Ensure the circle is on top of other elements */
   }
+
+/* ----------Certifications Section (Grid Style)----------- */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.cert-card {
+    background: #262626;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.03);
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+}
+
+.cert-card img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.cert-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cert-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* ----------Testimonials Section----------- */
+/* .testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+.testimonial-card {
+    background: #262626;
+    padding: 25px;
+    border-left: 5px solid #FFED00;
+    border-radius: 10px;
+    font-style: italic;
+}
+.testimonial-card h4 {
+    margin-top: 15px;
+    color: #87D1EB;
+    font-weight: 500;
+} */
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: #262626;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #FFED00;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.testimonial-card h4 {
+    margin-top: 15px;
+    color: #87D1EB;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* ----------Mobile Fixes for New Sections----------- */
+@media only screen and (max-width: 600px) {
+    .cert-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cert-item img {
+        margin-bottom: 15px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
