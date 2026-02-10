@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppions', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -20,6 +20,7 @@ body{
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
+	
 }
 
 .container{
@@ -98,11 +99,16 @@ nav ul li a:hover::after{
 
 .about-col-1{
     flex-basis:  35%;
+	display: flex;
+    align-items: center;     
+    justify-content: center; 
 }
 
 .about-col-1 img{
-    width: 100%;
+    width: 85%;
     border-radius:15px;
+	max-width: 320px;
+    border-radius: 15px;
 }
 
 .about-col-2{
@@ -170,7 +176,7 @@ nav ul li a:hover::after{
 /* ------------------Services --------------- */
 
 #servics{
-    padding: 30 px 0;
+    padding: 30px 0;
 }
 
 .services-list{
@@ -307,7 +313,7 @@ nav ul li a:hover::after{
 
 }
 
-.work:hover .img{
+.work:hover img{
     transform: scale(1.1);
 }
 
@@ -533,17 +539,7 @@ nav .fas{
 }
 
 
-#cursor-circle {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid grey; /* Transparent border */
-    pointer-events: none; /* Ensure the circle doesn't interfere with cursor events */
-    z-index: 9999; /* Ensure the circle is on top of other elements */
-  }
+
 
 /* ----------Certifications Section (Grid Style)----------- */
 .cert-grid {
@@ -654,4 +650,67 @@ nav .fas{
     .testimonial-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.open-to-work {
+    background: #262626;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.open-to-work h2 {
+    color: #FFED00;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.open-to-work p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+
+
+.skill-bars {
+    margin-top: 20px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.bar {
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background: #FFED00;
+    width: 0;
+    transition: width 1s ease;
+}
+
+.progress.html { width: 85%; }
+.progress.php { width: 80%; }
+.progress.dotnet { width: 70%; }
+.progress.wp { width: 95%; }
+
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+[data-animate].visible {
+    opacity: 1;
+    transform: translateY(0);
 }
