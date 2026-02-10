@@ -4,16 +4,17 @@
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
+    function opentab(tabname, el){
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
     }
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    el.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
 // 
 // </script>
 
@@ -45,3 +46,44 @@ var sidemenu = document.getElementById("sidemenu");
         
         
             // </script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // prevent page refresh
+
+        const formData = new FormData(form);
+
+        fetch("api/save_contact.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.status === "success") {
+                msg.style.color = "#61b752";
+                msg.innerText = data.message;
+                form.reset();
+            } else {
+                msg.style.color = "red";
+                msg.innerText = data.message;
+            }
+        })
+        .catch(() => {
+            msg.style.color = "red";
+            msg.innerText = "Something went wrong. Please try again.";
+        });
+    });
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+});
+
+document.querySelectorAll("[data-animate]").forEach(el => observer.observe(el));
