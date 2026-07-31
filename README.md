@@ -7,20 +7,18 @@
 
 ### LICENSE
 [MIT](
-    https://github.com/Saikishor164/saikishor164/blob/main/LICENSE
+    https://github.com/Saikishorr/saikishorr/blob/main/LICENSE
 )
 
 ### CONTACT ME
-Email: [saikishor164@gmail.com](mailto:saikishor164@gmail.com)
+Email: [rasalasaikishor@gmail.com](mailto:saikishor164@gmail.com)
 
 Twitter: [@Saikishor164](https://twitter.com/saikishor164)
 
 Discord: Saikishor#164  (ID:  9209778592)
 
-Github: [Saikishor164](http://github.com/Saikishor164)
+Github: [Saikishorr](http://github.com/Saikishorr)
 
-Website: [saikishor164](https://saikishor.netlify.app)
-
-https://roadmap.sh/projects/single-page-cv
+Website: [Portfolio](https://saikishor.netlify.app)
  
 ### THANK YOU FOR VISITING MY PROFILE!</h3>
