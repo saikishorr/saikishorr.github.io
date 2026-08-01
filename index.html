@@ -1,537 +1,722 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Saikishor Rasala, Portfolio Website, Software Engineer in Pune, Web Developer, Front-End Developer, Back-End Developer, Full Stack Developer, Web Design Services, Graphic Designer, Video Editing Services, Responsive Web Design, HTML, CSS, JavaScript, WordPress Developer, Azam Campus IT Department, Pune Maharashtra India, Custom Website Design, Freelance Web Designer, Web Development Projects, Contact Saikishor Rasala, Download Saikishor's Resume">
+    <meta name="keywords" content="Saikishor Rasala, Software Engineer, Web Developer, Pune Maharashtra, PHP Developer, .NET Developer, WordPress Developer, Full Stack Developer, ChitLAN, Credence Global Solutions">
+    <meta name="description" content="Saikishor Rasala – Software Engineer & Web Developer in Pune specializing in PHP, .NET, MySQL, JavaScript, WordPress, and Enterprise Applications.">
+    <meta name="author" content="Saikishor Rasala">
+    <meta name="robots" content="index, follow">
     <title>Saikishor Rasala | Software Engineer & Web Developer</title>
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="" href="script.js"> -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:title" content="Saikishor Rasala | Software Engineer Portfolio">
+    <meta property="og:description" content="Portfolio of Saikishor Rasala – Software Engineer & Web Developer in Pune specializing in PHP, .NET, MySQL, and JavaScript.">
+    <meta property="og:image" content="https://saikishor.dev/images/user.png">
+    <meta property="og:url" content="https://saikishor.dev">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Saikishor Rasala | Software Engineer">
+    <meta name="twitter:description" content="PHP & .NET Developer | Full Stack Engineer from Pune, India.">
+    <meta name="twitter:image" content="https://saikishor.dev/images/user.png">
+
+    <!-- JSON-LD Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Saikishor Rasala",
+      "url": "https://saikishor.dev",
+      "image": "https://saikishor.dev/images/user.png",
+      "jobTitle": "Software Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Credence Global Solutions"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/saikishor164",
+        "https://github.com/saikishorr",
+        "https://twitter.com/saikishorrasalaa",
+        "https://www.instagram.com/saikishor164/",
+        "https://www.facebook.com/saikishor164"
+      ],
+      "knowsAbout": [
+        "PHP",
+        "MySQL",
+        "ASP.NET",
+        "C#",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "WordPress",
+        "Web Development",
+        "Software Engineering"
+      ]
+    }
+    </script>
+
+    <!-- Main JavaScript Bundle -->
     <script src="script.js" defer></script>
-    <script src="https://kit.fontawesome.com/506dc419d7.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" alt="icon logo of Saikishor Rasala Portfolio">
-
-    <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="" />
-  
-  <!-- SEO: Description -->
-<meta name="description" content="Saikishor Rasala – Software Engineer & Web Developer in Pune specializing in PHP, .NET, WordPress, and Full Stack Development.">
-
-<!-- SEO: Author -->
-<meta name="author" content="Saikishor Rasala">
-
-<!-- SEO: Robots -->
-<meta name="robots" content="index, follow">
-
-<!-- Open Graph (LinkedIn / Facebook) -->
-<meta property="og:title" content="Saikishor Rasala | Software Engineer Portfolio">
-<meta property="og:description" content="Portfolio of Saikishor Rasala – PHP, .NET, WordPress & Full Stack Developer from Pune, India.">
-<meta property="og:image" content="https://saikishor.dev/images/user.png">
-<meta property="og:url" content="https://saikishor.dev">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Saikishor Rasala | Software Engineer">
-<meta name="twitter:description" content="PHP & .NET Developer | Full Stack Engineer from Pune">
-<meta name="twitter:image" content="https://saikishor.dev/images/user.png">
-
-    <!-- JSON-LD Schema: Personal Portfolio -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Saikishor Rasala",
-  "url": "https://saikishor.dev",
-  "image": "https://saikishor.dev/images/user.png",
-  "jobTitle": "Software Engineer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Credence Global Solutions"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Pune",
-    "addressRegion": "Maharashtra",
-    "addressCountry": "India"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/in/saikishor164",
-    "https://github.com/saikishorr",
-    "https://twitter.com/saikishorrasalaa"
-  ],
-  "knowsAbout": [
-    "PHP",
-    "MySQL",
-    "ASP.NET",
-    "C#",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "WordPress",
-    "Web Development",
-    "Software Engineering"
-  ]
-}
-</script>
-
 </head>
 <body>
-<div id="cursor-circle"></div>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <a href="https://saikishor.netlify.app"><img src="images/logo.png" loading="lazy" alt="saikishor rasala Image Logo" class="logo"> </a>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#servics">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    
 
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i> 
+    <!-- Reading Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Spotlight Radial Cursor Overlay -->
+    <div id="spotlight"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Floating Glass Capsule Header Nav -->
+    <header id="header-nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <img src="images/user.png" alt="Saikishor Rasala Avatar" class="nav-brand-avatar">
+                <span>Saikishor<span style="color: var(--accent-cyan);">.dev</span></span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
-            <div class="header-text">
-                <p>Software Engineer </p>
-                <h1>
-					Hi, My Name is <br> 
-					<span>Saikishor </span> Rasala <br> 
-					from Pune, Maharashtra India.
-				</h1>
+
+            <div class="nav-actions">
+                <button class="btn-icon" id="sound-toggle-btn" title="Toggle Soundscape UI">
+                    <i class="fas fa-volume-mute"></i>
+                </button>
+                <button class="btn-icon" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn btn-secondary" onclick="openTerminal()" style="padding: 0.35rem 0.75rem; font-size: 0.78rem;">
+                    <i class="fas fa-terminal"></i> CLI <span class="shortcut-badge">Ctrl+Shift+T</span>
+                </button>
+                <button class="btn btn-primary" onclick="openCommandPalette()" style="padding: 0.35rem 0.75rem; font-size: 0.78rem;">
+                    <i class="fas fa-search"></i> <span class="shortcut-badge" style="background: rgba(255,255,255,0.2); color:#fff;">Ctrl+K</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+        <a href="#hero" class="mobile-nav-link active"><i class="fas fa-home"></i> Home</a>
+        <a href="#about" class="mobile-nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="#services" class="mobile-nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+        <a href="#skills" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects" class="mobile-nav-link"><i class="fas fa-folder-open"></i> Projects</a>
+        <a href="#experience" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#certifications" class="mobile-nav-link"><i class="fas fa-award"></i> Certifications</a>
+        <a href="#contact" class="mobile-nav-link"><i class="fas fa-paper-plane"></i> Contact</a>
     </div>
-	
-	<!-- Open to Opportunities -->
-<section class="open-to-work">
-  <div class="container">
-    <h2>Open to Opportunities</h2>
-    <p>
-      Actively seeking opportunities as a <strong>Software Engineer / Web Developer</strong>
-      where I can contribute to building scalable web applications using
-      <strong>PHP, .NET, MySQL, JavaScript</strong>, and continue growing in enterprise systems.
-    </p>
-  </div>
-</section>
 
-<!-- ------------About ---------------->
-<div id="about"> 
-    <div class="container"> 
-
-        <!-- About Title (Moved Above Image) -->
-        <div class="row">
-            <div style="width:100%;">
-                <h1 class="sub-title">About Me</h1>
-            </div>
-        </div>
-
-        <div class="row"> 
-            <!-- Profile Image -->
-            <div class="about-col-1"> 
-                <img src="images/user.png" loading="lazy" alt="Saikishor Rasala"> 
-            </div> 
-
-            <!-- About Content -->
-            <div class="about-col-2"> 
-                <p>
-                    I am a Software Engineer who enjoys building practical, user-focused web applications.
-                    My journey into software development began with curiosity about how websites work,
-                    which gradually evolved into a passion for designing clean interfaces and building
-                    reliable backend systems.
-                    <br><br>
-                    Over the years, I have worked across both frontend and backend technologies,
-                    contributing to institutional websites and real-world production systems.
-                    I enjoy solving problems, continuously learning new technologies, and writing
-                    code that is simple, maintainable, and scalable.
-                    <br><br>
-                    Currently, I work as a Software Engineer and continue strengthening my expertise in
-                    <strong>PHP, .NET, MySQL, and JavaScript</strong>, with a long-term goal of building
-                    robust, enterprise-grade applications that create real impact.
-                </p>
-
-                <!-- Tabs -->
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
-                    <p class="tab-links" onclick="opentab('education', this)">Education</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <canvas id="hero-canvas"></canvas>
+        
+        <div class="container hero-content">
+            <div class="hero-text-col" data-animate>
+                <div class="badge badge-status hero-status-pill">
+                    <span class="badge-status-dot"></span> Open to Opportunities
                 </div>
 
-                <!-- Skills -->
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li>HTML, CSS & JavaScript</li>
-                        <li>PHP, MySQL, CodeIgniter</li>
-                        <li>ASP.NET, C#</li>
-                        <li>WordPress Development</li>
-                        <li>Git & GitHub</li>
-                    </ul>
+                <h1 class="hero-title">
+                    Hi, My Name is <span class="gradient-text-accent">Saikishor Rasala</span>
+                </h1>
 
-                    <!-- Skill Proficiency -->
-                    <div class="skill-bars">
-                        <div class="skill">
-                            <span>HTML / CSS / JavaScript</span>
-                            <div class="bar"><div class="progress html"></div></div>
+                <div class="typing-badge">
+                    <span>> </span><span id="typing-text">Software Engineer</span><span class="typing-cursor"></span>
+                </div>
+
+                <p class="hero-description">
+                    Software Engineer based in <strong>Pune, Maharashtra, India</strong>. I specialize in building practical, user-focused web applications and scalable enterprise systems using <strong>PHP, .NET, MySQL, JavaScript, and WordPress</strong>.
+                </p>
+
+                <div class="hero-cta-group">
+                    <button class="btn btn-primary" onclick="openResumeModal()">
+                        <i class="fas fa-file-download"></i> Download CV / Resume
+                    </button>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                    <a href="https://github.com/saikishorr" target="_blank" rel="noopener" class="btn btn-icon" title="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/saikishor164" target="_blank" rel="noopener" class="btn btn-icon" title="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="3">0+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="12">0+</div>
+                        <div class="stat-label">Web Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">0%</div>
+                        <div class="stat-label">Code Quality</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual-col" data-animate data-animate-delay="150">
+                <div class="hero-image-wrapper">
+                    <img src="images/user.png" alt="Saikishor Rasala" class="hero-image">
+                    
+                    <div class="floating-tech-card card-1">
+                        <i class="fab fa-php" style="color:#777bb4;"></i>
+                        <span>PHP & MySQL</span>
+                    </div>
+
+                    <div class="floating-tech-card card-2">
+                        <i class="fab fa-windows" style="color:#0078d4;"></i>
+                        <span>ASP.NET & C#</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Journey Section -->
+    <section id="about" style="padding: var(--space-2xl) 0;">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-tag"><i class="fas fa-user"></i> Personal Background</div>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate Software Engineer dedicated to crafting maintainable and user-focused web systems.</p>
+            </div>
+
+            <div class="about-grid">
+                <!-- User Profile Photo -->
+                <div data-animate>
+                    <img src="images/user.png" alt="Saikishor Rasala Profile" class="about-user-img">
+                </div>
+
+                <!-- Storytelling & Education -->
+                <div class="timeline-story">
+                    <div class="glass-card" data-animate>
+                        <p style="font-size:var(--text-base); color:var(--text-secondary); line-height:1.7;">
+                            I am a <strong>Software Engineer</strong> who enjoys building practical, user-focused web applications. My journey into software development began with curiosity about how websites work, which gradually evolved into a passion for designing clean interfaces and building reliable backend systems.
+                            <br><br>
+                            Over the years, I have worked across both frontend and backend technologies, contributing to institutional websites and real-world production systems. Currently working as a Software Engineer at <strong>Credence Global Solutions</strong> in Pune, strengthening my expertise in <strong>PHP, .NET, MySQL, and JavaScript</strong>.
+                        </p>
+                    </div>
+
+                    <div class="story-node" data-animate data-animate-delay="100">
+                        <div class="story-node-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="story-content">
+                            <span class="badge badge-tech" style="margin-bottom:0.4rem;">2024 Graduation</span>
+                            <h3>Master of Computer Application (MCA)</h3>
+                            <p style="color:var(--text-muted); font-size:0.85rem;">Allana Institute of Management Sciences, Pune</p>
                         </div>
-                        <div class="skill">
-                            <span>PHP & MySQL</span>
-                            <div class="bar"><div class="progress php"></div></div>
+                    </div>
+
+                    <div class="story-node" data-animate data-animate-delay="200">
+                        <div class="story-node-icon"><i class="fas fa-university"></i></div>
+                        <div class="story-content">
+                            <span class="badge badge-tech" style="margin-bottom:0.4rem;">2022 Graduation</span>
+                            <h3>Bachelor of Computer Application, B.B.A (CA)</h3>
+                            <p style="color:var(--text-muted); font-size:0.85rem;">Abeda Inamdar Senior College, Pune</p>
                         </div>
-                        <div class="skill">
-                            <span>ASP.NET & C#</span>
-                            <div class="bar"><div class="progress dotnet"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="padding: var(--space-2xl) 0; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-tag"><i class="fas fa-concierge-bell"></i> Value Delivered</div>
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">Delivering high-performance website development and tailored business applications.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="glass-card service-card" data-animate>
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Website Development</h3>
+                    <p>Custom websites built with clean, modern UI/UX using HTML5, CSS3, JavaScript, PHP, and WordPress.</p>
+                </div>
+
+                <div class="glass-card service-card" data-animate data-animate-delay="100">
+                    <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>ERP & Backend Development</h3>
+                    <p>Business ERP solutions and database management using PHP, MySQL, C#, and ASP.NET technologies.</p>
+                </div>
+
+                <div class="glass-card service-card" data-animate data-animate-delay="200">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Full Stack Engineering</h3>
+                    <p>End-to-end web applications with responsive mobile design, dynamic REST APIs, and database tuning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section id="skills" style="padding: var(--space-2xl) 0;">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-tag"><i class="fas fa-code-branch"></i> Core Stack</div>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies and tools I work with to build production applications.</p>
+            </div>
+
+            <div class="skills-category-grid">
+                <!-- Web & Backend -->
+                <div class="glass-card skill-category-card" data-animate>
+                    <div class="skill-card-header">
+                        <i class="fas fa-server" style="font-size:1.4rem;"></i>
+                        <h3>Backend & Languages</h3>
+                    </div>
+                    <div class="skill-tags-wrapper">
+                        <div class="skill-interactive-pill"><i class="fab fa-php" style="color:#777bb4;"></i> PHP</div>
+                        <div class="skill-interactive-pill"><i class="fab fa-windows" style="color:#0078d4;"></i> ASP.NET</div>
+                        <div class="skill-interactive-pill"><i class="fas fa-code" style="color:#239120;"></i> C#</div>
+                        <div class="skill-interactive-pill"><i class="fas fa-fire" style="color:#ee4323;"></i> CodeIgniter</div>
+                        <div class="skill-interactive-pill"><i class="fab fa-laravel" style="color:#ff2d20;"></i> Laravel</div>
+                    </div>
+                </div>
+
+                <!-- Frontend UI -->
+                <div class="glass-card skill-category-card" data-animate data-animate-delay="100">
+                    <div class="skill-card-header">
+                        <i class="fas fa-desktop" style="font-size:1.4rem;"></i>
+                        <h3>Frontend & UI</h3>
+                    </div>
+                    <div class="skill-tags-wrapper">
+                        <div class="skill-interactive-pill"><i class="fab fa-html5" style="color:#e34f26;"></i> HTML5</div>
+                        <div class="skill-interactive-pill"><i class="fab fa-css3-alt" style="color:#1572b6;"></i> CSS3</div>
+                        <div class="skill-interactive-pill"><i class="fab fa-js-square" style="color:#f7df1e;"></i> JavaScript</div>
+                        <div class="skill-interactive-pill"><i class="fab fa-bootstrap" style="color:#7952b3;"></i> Responsive Design</div>
+                    </div>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="glass-card skill-category-card" data-animate data-animate-delay="200">
+                    <div class="skill-card-header">
+                        <i class="fas fa-database" style="font-size:1.4rem;"></i>
+                        <h3>Databases & CMS</h3>
+                    </div>
+                    <div class="skill-tags-wrapper">
+                        <div class="skill-interactive-pill"><i class="fas fa-database" style="color:#00758f;"></i> MySQL</div>
+                        <div class="skill-interactive-pill"><i class="fas fa-server" style="color:#cc292b;"></i> SQL Server</div>
+                        <div class="skill-interactive-pill"><i class="fab fa-wordpress" style="color:#21759b;"></i> WordPress</div>
+                        <div class="skill-interactive-pill"><i class="fab fa-git-alt" style="color:#f05032;"></i> Git & GitHub</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section id="projects" style="padding: var(--space-2xl) 0; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-tag"><i class="fas fa-folder-open"></i> Portfolio</div>
+                <h2 class="section-title">My Work & Projects</h2>
+                <p class="section-subtitle">Real-world institutional websites, dental portals, and open-source applications.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="projects-filter-bar" data-animate>
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="institutional">Institutional Websites</button>
+                <button class="filter-btn" data-filter="commercial">Commercial Sites</button>
+                <button class="filter-btn" data-filter="open-source">Open Source Repos</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="projects-grid">
+                <!-- Rendered dynamically by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" style="padding: var(--space-2xl) 0;">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-tag"><i class="fas fa-briefcase"></i> Experience</div>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">Professional track record in web development and software engineering.</p>
+            </div>
+
+            <div class="timeline-interactive">
+                <!-- Role 1 -->
+                <div class="exp-item" data-animate>
+                    <div class="exp-node-dot"></div>
+                    <div class="exp-meta">
+                        <span class="badge badge-status">Jan 2025 - Present</span>
+                        <h4 style="margin-top:0.4rem;">Credence Global Solutions</h4>
+                        <p style="font-size:var(--text-xs); color:var(--accent-cyan);">Pune, Maharashtra, India</p>
+                    </div>
+                    <div class="glass-card exp-content">
+                        <h3>Software Engineer</h3>
+                        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:0.5rem;">Credence Global Solutions</p>
+                        <p>Developing scalable web applications using PHP, .NET, MySQL, and JavaScript. Contributing to enterprise system features, database query optimization, and REST API integrations.</p>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="exp-item" data-animate data-animate-delay="100">
+                    <div class="exp-node-dot"></div>
+                    <div class="exp-meta">
+                        <span class="badge badge-tech">May 2022 - Nov 2024</span>
+                        <h4 style="margin-top:0.4rem;">MCE Society Azam Campus</h4>
+                        <p style="font-size:var(--text-xs); color:var(--text-muted);">Azam I.T Department, Pune</p>
+                    </div>
+                    <div class="glass-card exp-content">
+                        <h3>Web Developer</h3>
+                        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:0.5rem;">Azam I.T Department</p>
+                        <p>Developed and maintained official websites for multiple higher education colleges under MCE Society, including M.A. Rangoonwala Dental College, Dr. P.A. Inamdar University, and Azam B.Ed College.</p>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="exp-item" data-animate data-animate-delay="200">
+                    <div class="exp-node-dot"></div>
+                    <div class="exp-meta">
+                        <span class="badge badge-tech">Oct 2021 - Mar 2022</span>
+                        <h4 style="margin-top:0.4rem;">P.A. Inamdar College</h4>
+                        <p style="font-size:var(--text-xs); color:var(--text-muted);">Visual Effects & Arts</p>
+                    </div>
+                    <div class="glass-card exp-content">
+                        <h3>Web Developer & Graphic Designer</h3>
+                        <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:0.5rem;">College of Visual Effects, Design & Arts</p>
+                        <p>Designed and updated college web pages, graphics, and promotional web assets using HTML, CSS, JavaScript, and design tools.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" style="padding: var(--space-2xl) 0; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-tag"><i class="fas fa-award"></i> Qualifications</div>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Verified technical certifications and courses completed.</p>
+            </div>
+
+            <div class="certs-grid">
+                <div class="glass-card cert-card" data-animate>
+                    <div class="cert-card-header">
+                        <img src="images/cisco.png" alt="Cisco" class="cert-logo" onerror="this.style.display='none'">
+                        <div>
+                            <h4>JavaScript Essentials 1</h4>
+                            <p style="font-size:var(--text-xs); color:var(--accent-cyan);">Cisco – Oct 2024</p>
                         </div>
-                        <div class="skill">
-                            <span>WordPress</span>
-                            <div class="bar"><div class="progress wp"></div></div>
+                    </div>
+                    <a href="https://www.credly.com/badges/749fe48a-bc91-48cf-a297-514ed982502d" class="btn btn-secondary" style="padding:0.4rem 0.8rem; font-size:0.8rem; margin-top:0.5rem;" target="_blank" rel="noopener">View Certificate</a>
+                </div>
+
+                <div class="glass-card cert-card" data-animate data-animate-delay="100">
+                    <div class="cert-card-header">
+                        <img src="images/cisco.png" alt="Cisco" class="cert-logo" onerror="this.style.display='none'">
+                        <div>
+                            <h4>Introduction to Cybersecurity</h4>
+                            <p style="font-size:var(--text-xs); color:var(--accent-cyan);">Cisco – Oct 2023</p>
+                        </div>
+                    </div>
+                    <a href="https://www.credly.com/badges/6b21ec76-1a39-4bdb-824c-5e704b926a8f/linked_in_profile" class="btn btn-secondary" style="padding:0.4rem 0.8rem; font-size:0.8rem; margin-top:0.5rem;" target="_blank" rel="noopener">View Certificate</a>
+                </div>
+
+                <div class="glass-card cert-card" data-animate data-animate-delay="200">
+                    <div class="cert-card-header">
+                        <img src="images/linkedin.png" alt="LinkedIn" class="cert-logo" onerror="this.style.display='none'">
+                        <div>
+                            <h4>Generative AI Search</h4>
+                            <p style="font-size:var(--text-xs); color:var(--accent-cyan);">LinkedIn – Aug 2023</p>
+                        </div>
+                    </div>
+                    <a href="https://www.linkedin.com/learning/certificates/3ca7439e7eeac3949e0914286b5047be18391773c130c6468c3658bc679b2ad2" class="btn btn-secondary" style="padding:0.4rem 0.8rem; font-size:0.8rem; margin-top:0.5rem;" target="_blank" rel="noopener">View Certificate</a>
+                </div>
+
+                <div class="glass-card cert-card" data-animate data-animate-delay="300">
+                    <div class="cert-card-header">
+                        <img src="images/freecodecamp.jpg" alt="FreeCodeCamp" class="cert-logo" onerror="this.style.display='none'">
+                        <div>
+                            <h4>Responsive Web Design</h4>
+                            <p style="font-size:var(--text-xs); color:var(--accent-cyan);">FreeCodeCamp – Nov 2022</p>
+                        </div>
+                    </div>
+                    <a href="https://www.freecodecamp.org/certification/saikishor/responsive-web-design" class="btn btn-secondary" style="padding:0.4rem 0.8rem; font-size:0.8rem; margin-top:0.5rem;" target="_blank" rel="noopener">View Certificate</a>
+                </div>
+
+                <div class="glass-card cert-card" data-animate data-animate-delay="400">
+                    <div class="cert-card-header">
+                        <img src="images/cursa.jpg" alt="Cursa" class="cert-logo" onerror="this.style.display='none'">
+                        <div>
+                            <h4>Advanced WordPress Development</h4>
+                            <p style="font-size:var(--text-xs); color:var(--accent-cyan);">Cursa – Oct 2022</p>
+                        </div>
+                    </div>
+                    <a href="https://cursa.app/en/my-certificate/8061bf76ab2c75d319cac6cc5eeb5be2/ok" class="btn btn-secondary" style="padding:0.4rem 0.8rem; font-size:0.8rem; margin-top:0.5rem;" target="_blank" rel="noopener">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="padding: var(--space-2xl) 0;">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-tag"><i class="fas fa-quote-left"></i> Recommendations</div>
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">What clients and academic leaders say about my work.</p>
+            </div>
+
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:var(--space-lg);">
+                <div class="glass-card" data-animate>
+                    <p style="font-style:italic; margin-bottom:1rem;">"Saikishor’s work on our institute website was top-notch. Reliable and professional throughout."</p>
+                    <h4 style="color:var(--accent-cyan);">- Dr. Raza Sheikh</h4>
+                </div>
+
+                <div class="glass-card" data-animate data-animate-delay="100">
+                    <p style="font-style:italic; margin-bottom:1rem;">"Always impressed with his quick understanding and execution. A go-to developer!"</p>
+                    <h4 style="color:var(--accent-cyan);">- Mohsin Shaikh</h4>
+                </div>
+
+                <div class="glass-card" data-animate data-animate-delay="200">
+                    <p style="font-style:italic; margin-bottom:1rem;">"He developed our dental clinic website exactly how we envisioned it. Professional & timely!"</p>
+                    <h4 style="color:var(--accent-cyan);">- Kids Dental Corner, Pune</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: var(--space-2xl) 0; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</div>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's discuss web development opportunities, projects, or collaborations.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Left -->
+                <div class="contact-info-col" data-animate>
+                    <div class="glass-card">
+                        <div class="badge badge-status" style="margin-bottom:1rem;">
+                            <span class="badge-status-dot"></span> Available for Hire
+                        </div>
+                        <h3>Saikishor Rasala</h3>
+                        <p style="margin-bottom:1.2rem;">Software Engineer | PHP & .NET Developer</p>
+
+                        <div style="display:flex; flex-direction:column; gap:0.85rem;">
+                            <div style="display:flex; align-items:center; gap:0.75rem;">
+                                <i class="fas fa-envelope" style="color:var(--accent-cyan);"></i>
+                                <a href="mailto:rasalasaikishor@gmail.com" style="color:var(--text-primary); font-weight:600;">rasalasaikishor@gmail.com</a>
+                            </div>
+
+                            <div style="display:flex; align-items:center; gap:0.75rem;">
+                                <i class="fas fa-phone-alt" style="color:var(--accent-cyan);"></i>
+                                <a href="tel:+919209778592" style="color:var(--text-primary); font-weight:600;">+91 9209778592</a>
+                            </div>
+
+                            <div style="display:flex; align-items:center; gap:0.75rem;">
+                                <i class="fas fa-map-marker-alt" style="color:var(--accent-cyan);"></i>
+                                <span>Pune, Maharashtra, India</span>
+                            </div>
+
+                            <div style="display:flex; align-items:center; gap:0.75rem;">
+                                <i class="fas fa-clock" style="color:var(--accent-purple);"></i>
+                                <span id="pune-time">Local Time in Pune</span>
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:0.75rem; margin-top:1.5rem;">
+                            <a href="https://www.linkedin.com/in/saikishor164" target="_blank" rel="noopener" class="btn btn-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/saikishorr" target="_blank" rel="noopener" class="btn btn-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/saikishor164/" target="_blank" rel="noopener" class="btn btn-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/saikishor164" target="_blank" rel="noopener" class="btn btn-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/saikishorrasalaa" target="_blank" rel="noopener" class="btn btn-icon"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Experience -->
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Jan 2025 - Present</span> <br>Software Engineer</li>
-                        <li>Credence Global Solutions</li>
+                <!-- Contact Form Right -->
+                <div class="glass-card" data-animate data-animate-delay="100">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="Name" class="form-control" placeholder="e.g. John Doe" required>
+                        </div>
 
-                        <li><span>May 2022 - Nov 2024</span> <br>Web Developer</li>
-                        <li>MCE Society Azam Campus - Azam I.T Department</li>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="Email" class="form-control" placeholder="e.g. john@example.com" required>
+                        </div>
 
-                        <li><span>Oct 2021 - Mar 2022</span> <br>Web Developer & Graphic Designer</li>
-                        <li>P.A. Inamdar College of Visual Effects, Design & Arts</li>
-                    </ul>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="Message" class="form-control" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width:100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <div id="msg" style="font-weight:600; font-size:var(--text-sm); margin-top:0.5rem;"></div>
+                    </form>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Education -->
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2024</span> <br>Master of Computer Application (MCA)</li>
-                        <li>Allana Institute of Management Sciences</li>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-content">
+            <div>
+                <p style="color:var(--text-primary); font-family:var(--font-display); font-weight:700;">Saikishor Rasala</p>
+                <p style="font-size:var(--text-xs); color:var(--text-muted);">Software Engineer & Web Developer | Pune, Maharashtra, India</p>
+            </div>
+            <p style="font-size:var(--text-xs); color:var(--text-muted);">
+                Copyright © <span id="current-year">2026</span> Saikishor Rasala. All rights reserved.
+            </p>
+        </div>
+    </footer>
 
-                        <li><span>2022</span> <br>Bachelor of Computer Application, B.B.A (CA)</li>
-                        <li>Abeda Inamdar Senior College</li>
-
-                        <li><span>2019</span> <br>12th HSC</li>
-                        <li>Guru Nanak Public School & Jr College</li>
-
-                        <li><span>2017</span> <br>10th SSC</li>
-                        <li>Guru Nanak Public School</li>
-                    </ul>
-                </div>
-
+    <!-- Command Palette Modal (Ctrl + K) -->
+    <div id="command-palette" class="modal-overlay">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="command-input-row">
+                <i class="fas fa-search" style="color:var(--accent-cyan); font-size:1.2rem;"></i>
+                <input type="text" id="command-input" class="command-input" placeholder="Type a command or search section..." autocomplete="off">
+                <span class="shortcut-badge">ESC to close</span>
+            </div>
+            <div id="command-list" class="command-list">
+                <!-- Rendered dynamically -->
             </div>
         </div>
     </div>
-</div>
 
-
-
-<!-- --------------------services --------------------- -->
-<br>
- <br>
- <br>
- <br>
- <br>
- <br>
-    <div class="services">
-        <div class="container">
-            <h1 class="sub-title" id="servics">My Services</h1>
-            <div class="services-list">
-    <div>
-        <i class="fa-solid fa-code"></i>
-        <h2>Website Development</h2>
-        <p>Custom websites with modern UI/UX using latest tech stacks like HTML, CSS, JavaScript & PHP.</p>
-    </div>
-    <div>
-        <i class="fa-solid fa-database"></i>
-        <h2>ERP Developer</h2>
-        <p>ERP solutions for small and medium businesses using PHP, MySQL, and .NET technologies.</p>
-    </div>
-</div>
-
-        </div>
-    </div>
-
-<!-- ----------------------portfilo --------------------- -->
-                                                                                                                                                  
-
-
-
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title" id="portfolio"> My Work </h1>
-        <div class="work-list">
-            <div class="work" data-animate >
-                <img src="images/work-1.png" loading="lazy" alt="Website Development Project for M.A. Rangoonwala College">
-                <div class="layer">
-                    <h3 class="websitesh3">Website</h3>
-                    <p class="works1text">
-                        M. A. Rangoonwala College of Dental Sciences & Research Centre, Pune - Developed <br> <br>
-                    </p>
-                    <a href="http://mardentalcollege.org" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+    <!-- CLI Terminal Emulator Modal (Ctrl + Shift + T) -->
+    <div id="terminal-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 800px; background: transparent; border: none; box-shadow: none;">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="terminal-dot" style="background:#ef4444;" onclick="document.getElementById('terminal-modal').classList.remove('active')" title="Close Terminal"></div>
+                        <div class="terminal-dot" style="background:#f59e0b;"></div>
+                        <div class="terminal-dot" style="background:#10b981;"></div>
+                    </div>
+                    <span class="terminal-title"><i class="fas fa-terminal" style="color:var(--accent-cyan); margin-right:6px;"></i> saikishor-cli-v2.5.sh</span>
+                    <button class="terminal-close-btn" onclick="document.getElementById('terminal-modal').classList.remove('active')" title="Close Terminal">
+                        <i class="fas fa-times"></i> Close
+                    </button>
+                </div>
+                <div id="terminal-output" class="terminal-output">
+<div style="color:#10b981; font-weight:bold; margin-bottom:0.4rem;">✓ Connected to Saikishor's Developer Shell.</div>
+Welcome! Type '<span style="color:#38bdf8; font-weight:bold;">help</span>' to list available commands.
+                </div>
+                <div class="terminal-input-row">
+                    <span id="terminal-prompt" class="terminal-prompt">guest@saikishor-portfolio:~$</span>
+                    <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type command or natural question (e.g. where does saikishor live?)...">
                 </div>
             </div>
-            <div class="work" data-animate >
-                <img src="images/work-2.png" loading="lazy" alt="Website Development Project for Dr. P. A. Inamdar University" >
-                <div class="layer">
-                    <h3 class="websitesh3">Website</h3>
-                    <p class="works1text">
-                        Dr. P. A. Inamdar University, Pune - Developed <br> <br>
-                    </p>
-                    <a href="http://drpaiu.edu.in" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+    </div>
+
+    <!-- Resume PDF Viewer Modal -->
+    <div id="resume-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 900px; height: 90vh;">
+            <div class="modal-header">
+                <h3 style="margin:0;"><i class="fas fa-file-pdf" style="color:var(--accent-cyan);"></i> Saikishor Rasala - CV / Resume</h3>
+                <div style="display:flex; align-items:center; gap:0.75rem;">
+                    <a href="images/saikishor-resume.pdf" download="saikishor-resume.pdf" class="btn btn-primary" style="padding:0.4rem 0.85rem; font-size:0.8rem;">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                    <button class="modal-close" onclick="closeResumeModal()"><i class="fas fa-times"></i></button>
                 </div>
             </div>
-            <div class="work" data-animate>
-                <img src="images/work-3.png" loading="lazy" alt="Website Development Project for HGM Azam College of Education">
-                <div class="layer">
-                    <h3 class="websitesh3">Website</h3>
-                    <p class="works1text">
-                        H.G.M. Azam College of Education - Developed <br> <br>
-                    </p>
-                    <a href="https://azambedcollege.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    
+            <div class="modal-body" style="height: calc(100% - 70px); padding: 0;">
+                <iframe src="images/saikishor-resume.pdf" style="width:100%; height:100%; border:none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Case Study Detail Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 750px;">
+            <div class="modal-header">
+                <h3 style="margin:0;"><i class="fas fa-project-diagram" style="color:var(--accent-cyan);"></i> Project Case Study</h3>
+                <button class="modal-close" onclick="closeProjectModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="project-modal-body" class="modal-body">
+                <!-- Rendered dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant Floating Widget -->
+    <div id="ai-assistant-widget">
+        <button id="ai-toggle-btn" class="ai-toggle-btn" title="Chat with Saikishor's AI Persona">
+            <i class="fas fa-robot"></i>
+        </button>
+
+        <div id="ai-chat-box" class="ai-chat-box">
+            <div class="modal-header" style="background:var(--bg-tertiary); padding:0.75rem 1rem;">
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                    <i class="fas fa-robot" style="color:var(--accent-cyan);"></i>
+                    <span style="font-weight:600; font-size:0.9rem;">Saikishor's AI Persona</span>
                 </div>
-                
+                <button id="ai-close-btn" class="modal-close" style="width:28px; height:28px;"><i class="fas fa-times"></i></button>
             </div>
-            <div class="work" data-animate>
-    <img src="images/work-4.png" loading="lazy" alt="Kids Dental Corner Pune Website">
-    <div class="layer">
-        <h3 class="websitesh3">Website</h3>
-        <p class="works1text">Kids Dental Corner, Pune - Developed <br>Built responsive UI using HTML5, CSS3, JavaScript & PHP</p>
-        <a href="http://kidsdentalcornerpune.com" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-up-right-from-square"></i>
-        </a>
-    </div>
-</div>
 
-<div class="work" data-animate>
-    <img src="images/work-5.png" loading="lazy" alt="Allana College of Architecture Website">
-    <div class="layer">
-        <h3 class="websitesh3">Website</h3>
-        <p class="works1text">Allana College of Architecture, Pune - Developed <br><br></p>
-        <a href="https://allanaarchitecture.org/" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-up-right-from-square"></i>
-        </a>
-    </div>
-</div>
-
-<div class="work" data-animate>
-    <img src="images/work-6.png" loading="lazy" alt="Allana Institute of Computer Application Website">
-    <div class="layer">
-        <h3 class="websitesh3">Website</h3>
-        <p class="works1text">Allana Institute of Computer Application and IT - Developed <br><br></p>
-        <a href="https://aicait.edu.in" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-up-right-from-square"></i>
-        </a>
-    </div>
-        </div>
-        
-</div>
-
-        <!-- <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br> -->
-        
-        <!-- <a href="#" class="btn">See More..</a> -->
-    </div>
-</div>
-
-<!-- GitHub Projects -->
-<section id="github-projects">
-  <div class="container">
-    <h1 class="sub-title">GitHub Projects</h1>
-
-    <div class="services-list">
-
-      <div>
-        <i class="fa-brands fa-github"></i>
-        <h2>ChitLAN – LAN Chat Application</h2>
-        <p>
-          Peer-to-peer chat application built using PHP, MySQL, and JavaScript.
-          Features include authentication, group chat, REST APIs, and admin controls.
-        </p>
-        <a href="https://github.com/saikishorr/ChitLAN" target="_blank" rel="noopener">
-          View Source Code
-        </a>
-      </div>
-
-      <div>
-        <i class="fa-brands fa-github"></i>
-        <h2>Screenplay Writing Website</h2>
-        <p>
-          Web-based platform for writing and managing screenplays with user authentication,
-          structured content storage, and a clean writing-focused UI.
-        </p>
-        <a href="https://github.com/saikishorr" target="_blank" rel="noopener">
-          View Source Code
-        </a>
-      </div>
-
-      <div>
-        <i class="fa-brands fa-github"></i>
-        <h2>Flip Card Memory Game</h2>
-        <p>
-          Interactive memory card game built using HTML, CSS, and JavaScript.
-          Focused on game logic, animations, and responsive design.
-        </p>
-        <a href="https://github.com/saikishorr/flip-card-memory-card" target="_blank" rel="noopener">
-          View Source Code
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- --------------------Certifications-------------------- -->
-<br>
- <br>
- <br>
- <br>
- <br>
- <br>
-<div id="certifications" class="container">
-    <h1 class="sub-title">Certifications</h1>
-    <div class="cert-grid">
-        <div class="cert-card">
-            <img src="images/cisco.png" loading="lazy" alt="Cisco Certification Logo">
-            <h3>JavaScript Essentials 1</h3>
-            <p>Issued by Cisco – Oct 2024</p>
-            <a href="https://www.credly.com/badges/749fe48a-bc91-48cf-a297-514ed982502d" class="btn btn2" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert-card">
-            <img src="images/cisco.png" loading="lazy" alt="Cisco Certification Logo">
-            <h3>Introduction to Cybersecurity</h3>
-            <p>Issued by Cisco – Oct 2023</p>
-            <a href="https://www.credly.com/badges/6b21ec76-1a39-4bdb-824c-5e704b926a8f/linked_in_profile" class="btn btn2" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert-card">
-            <img src="images/linkedin.png" loading="lazy" alt="LinkedIn Certification Logo">
-            <h3>Generative AI: The Evolution of Thoughtful Online Search</h3>
-            <p>Issued by LinkedIn – Aug 2023</p>
-            <a href="https://www.linkedin.com/learning/certificates/3ca7439e7eeac3949e0914286b5047be18391773c130c6468c3658bc679b2ad2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BOAdxvf8RQOuPsNkn2BR4yw%3D%3D" class="btn btn2" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert-card">
-            <img src="images/linkedin.png" loading="lazy" alt="LinkedIn Certification Logo">
-            <h3>Project Management Foundations</h3>
-            <p>Issued by LinkedIn – Aug 2023</p>
-            <a href="https://www.linkedin.com/learning/certificates/86d05642e0765340f9bc5a7adf7c39adef1e83f4e0d6f428040a658c3d99e26b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BOAdxvf8RQOuPsNkn2BR4yw%3D%3D" class="btn btn2" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert-card">
-            <img src="images/freecodecamp.jpg" loading="lazy" alt="freecodecamp Certification Logo">
-            <h3>Responsive Web Design</h3>
-            <p>Issued by FreeCodeCamp – Nov 2022</p>
-            <a href="https://www.freecodecamp.org/certification/saikishor/responsive-web-design" class="btn btn2" target="_blank">View Certificate</a>
-        </div>
-        
-        <div class="cert-card">
-            <img src="images/cursa.jpg" loading="lazy" alt="freecodecamp Certification Logo">
-            <h3>Advanced wordpress theme development </h3>
-            <p>Issued by Cursa – Oct 2022</p>
-            <a href="https://cursa.app/en/my-certificate/8061bf76ab2c75d319cac6cc5eeb5be2/ok" class="btn btn2" target="_blank">View Certificate</a>
-        </div>
-    </div>
-</div>
-
-
-<!-- --------------------Testimonials-------------------- -->
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
-<div id="testimonials" class="container">
-    <h1 class="sub-title">Testimonials</h1>
-    <div class="testimonial-grid">
-        <div class="testimonial-card">
-            <p>"Saikishor’s work on our institute website was top-notch. Reliable and professional throughout."</p>
-            <h4>- Dr. Raza Sheikh</h4>
-        </div>
-        <div class="testimonial-card">
-            <p>"Always impressed with his quick understanding and execution. A go-to developer!"</p>
-            <h4>- Mohsin Shaikh</h4>
-        </div>
-        <div class="testimonial-card">
-            <p>"He developed our dental clinic website exactly how we envisioned it. Professional & timely!"</p>
-            <h4>- Kids Dental Corner, Pune</h4>
-        </div>
-    </div>
-</div>
-
-<br>
- <br>
- <br>
- <br>
- <br>
- <br>
-
-<!-------------------contact ------------------->
-
-<div class="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title" id="contact">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> rasalasaikishor@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> +91 9209778592</p>
-                <p><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra, India</p>
-
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/saikishor164" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/saikishorr" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/saikishor164/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a href="
-                    https://www.facebook.com/saikishor164" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
-                    <a href="
-                    https://twitter.com/saikishorrasalaa" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <div id="ai-messages" class="ai-chat-messages">
+                <div class="ai-msg bot">
+                    Hello! I'm Saikishor's AI Assistant. Ask me about his software engineering experience, projects, skills, or education!
                 </div>
-                <a href="images/resume/Saikishor-Rasala-1.pdf"  target="_blank" rel="noopener noreferrer" class="btn btn2">Download CV</a>
-
-                
-            </div>
-            <div class="contact-right">
-                <form id="contactForm">
-                    <input type="text" placeholder="Your Name" name="Name" autocomplete="name" class="box" required>
-                    <input type="email" name="Email" placeholder="Your Email" autocomplete="email" class="box" required> 
-                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message" class="box" required></textarea>
-                    <input type="submit" value="Send Message" class="btn btn2">
-                </form>
-                <span id="msg"></span>
             </div>
 
+            <div style="padding:0.75rem; border-top:1px solid var(--border-subtle); display:flex; gap:0.5rem;">
+                <input type="text" id="ai-input" class="form-control" style="padding:0.5rem 0.75rem; font-size:0.85rem;" placeholder="Ask a question..." autocomplete="off">
+                <button id="ai-send-btn" class="btn btn-primary" style="padding:0.5rem 0.85rem; font-size:0.85rem;"><i class="fas fa-paper-plane"></i></button>
+            </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i><script>document.write(new Date().getFullYear())</script> | Desgined and Developed by <a href="http://linkedin.com/in/saikishor164" target="_blank" rel="noopener noreferrer">Saikishor Rasala</a></p>
-    </div>
-</div>
 
-
-
-    
 </body>
 </html>
-
-
-<!-- 
-<br><br><br><hr>
-https://rahuldkjain.github.io/gh-profile-readme-generator/
-
-https://rahuldkjain.github.io/gh-profile-readme-generator/addons
-
-https://dev.to/saikishor164
-
-
-https://www.buymeacoffee.com/saikishor164  -->
-

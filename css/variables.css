@@ -1,0 +1,116 @@
+/* ==========================================================================
+   DESIGN TOKENS & SYSTEM VARIABLES
+   Portfolio: Saikishor Rasala - Software Engineer
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Dark Mode (Default) */
+  --bg-primary: #050505;        /* Deep Space Black */
+  --bg-secondary: #0e1116;      /* Dark Obsidian */
+  --bg-tertiary: #161b22;       /* Slate Obsidian */
+  --bg-elevated: #1c2128;       /* Card Surface */
+  --bg-glass: rgba(14, 17, 22, 0.8);
+  --bg-glass-card: rgba(255, 255, 255, 0.03);
+  --bg-glass-card-hover: rgba(255, 255, 255, 0.07);
+  --bg-modal: rgba(5, 5, 5, 0.9);
+
+  /* Accents */
+  --accent-cyan: #06b6d4;       /* Hyper Cyan */
+  --accent-blue: #3b82f6;       /* Electric Blue */
+  --accent-purple: #8b5cf6;     /* Deep Violet */
+  --accent-magenta: #ec4899;    /* Neon Magenta */
+  --accent-emerald: #10b981;    /* System Success / Status */
+  --accent-amber: #f59e0b;      /* Warning / Highlight */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%);
+  --gradient-accent: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  --gradient-glow: radial-gradient(circle at center, rgba(6, 182, 212, 0.15) 0%, rgba(139, 92, 246, 0.05) 50%, transparent 70%);
+  --gradient-card-border: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
+  --gradient-text: linear-gradient(135deg, #ffffff 30%, rgba(255, 255, 255, 0.6) 100%);
+  --gradient-text-accent: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #0f172a;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.15);
+  --border-focus: rgba(56, 189, 248, 0.5);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 30px rgba(56, 189, 248, 0.25);
+  --shadow-purple-glow: 0 0 30px rgba(139, 92, 246, 0.25);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', var(--font-sans);
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Fluid Font Sizes - Adjusted for clean hero proportion */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.85rem);
+  --text-sm: clamp(0.85rem, 0.8rem + 0.2vw, 0.95rem);
+  --text-base: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+  --text-lg: clamp(1.1rem, 1.02rem + 0.3vw, 1.2rem);
+  --text-xl: clamp(1.2rem, 1.1rem + 0.4vw, 1.35rem);
+  --text-2xl: clamp(1.4rem, 1.25rem + 0.6vw, 1.75rem);
+  --text-3xl: clamp(1.8rem, 1.5rem + 1vw, 2.2rem);
+  --text-4xl: clamp(2.2rem, 1.8rem + 1.5vw, 2.8rem);
+  --text-5xl: clamp(2.6rem, 2.2rem + 2vw, 3.4rem);
+  --text-hero: clamp(2.2rem, 1.8rem + 1.8vw, 3.2rem);
+
+  /* Spacing */
+  --space-xs: clamp(0.25rem, 0.2rem + 0.25vw, 0.5rem);
+  --space-sm: clamp(0.5rem, 0.4rem + 0.5vw, 0.875rem);
+  --space-md: clamp(0.875rem, 0.75rem + 0.75vw, 1.25rem);
+  --space-lg: clamp(1.25rem, 1rem + 1.25vw, 2rem);
+  --space-xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --space-2xl: clamp(3rem, 2.5rem + 3vw, 5rem);
+
+  /* Layout */
+  --container-max: 1240px;
+  --header-height: 72px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --backdrop-blur: blur(16px);
+}
+
+/* Light Theme Variables Override */
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
+  --bg-elevated: #ffffff;
+  --bg-glass: rgba(248, 250, 252, 0.85);
+  --bg-glass-card: rgba(0, 0, 0, 0.03);
+  --bg-glass-card-hover: rgba(0, 0, 0, 0.06);
+  --bg-modal: rgba(248, 250, 252, 0.95);
+
+  --gradient-text: linear-gradient(135deg, #0f172a 30%, #475569 100%);
+  --gradient-text-accent: linear-gradient(135deg, #0284c7 0%, #4f46e5 50%, #9333ea 100%);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-medium: rgba(0, 0, 0, 0.15);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
+}

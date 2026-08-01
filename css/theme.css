@@ -1,0 +1,45 @@
+/* ==========================================================================
+   THEME SWITCHING UTILITIES
+   ========================================================================== */
+
+/* Smooth Transition for Color Theme Toggle */
+body, 
+.glass-card, 
+.modal-content, 
+#header-nav, 
+.form-control, 
+.btn-secondary, 
+.ai-chat-box, 
+.command-item {
+  transition: background-color var(--transition-smooth), border-color var(--transition-smooth), color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+/* Light Mode Overrides for Specific Components */
+[data-theme="light"] #hero-canvas {
+  opacity: 0.35;
+}
+
+[data-theme="light"] .glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .glass-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(2, 132, 199, 0.4);
+}
+
+[data-theme="light"] .hero-image-wrapper {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.03));
+}
+
+[data-theme="light"] .terminal-window {
+  background: #0f172a !important;
+  color: #38bdf8 !important;
+}
+
+[data-theme="light"] .shortcut-badge {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: var(--text-secondary);
+}
