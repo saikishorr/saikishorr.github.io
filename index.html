@@ -98,7 +98,7 @@
                 <img src="images/user.png" alt="Saikishor Rasala Avatar" class="nav-brand-avatar">
                 <span>Saikishor<span style="color: var(--accent-cyan);">.dev</span></span>
             </a>
-
+ 
             <nav class="nav-menu">
                 <a href="#hero" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
@@ -692,28 +692,61 @@ Welcome! Type '<span style="color:#38bdf8; font-weight:bold;">help</span>' to li
 
     <!-- AI Assistant Floating Widget -->
     <div id="ai-assistant-widget">
+        <div id="ai-greeting-tooltip" class="ai-greeting-tooltip">
+            <span>Hi! I'm Saikishor's AI Persona. Ask me anything!</span>
+            <button id="ai-tooltip-close" title="Dismiss">&times;</button>
+        </div>
+
         <button id="ai-toggle-btn" class="ai-toggle-btn" title="Chat with Saikishor's AI Persona">
             <i class="fas fa-robot"></i>
+            <span class="ai-status-dot"></span>
         </button>
 
         <div id="ai-chat-box" class="ai-chat-box">
-            <div class="modal-header" style="background:var(--bg-tertiary); padding:0.75rem 1rem;">
-                <div style="display:flex; align-items:center; gap:0.5rem;">
-                    <i class="fas fa-robot" style="color:var(--accent-cyan);"></i>
-                    <span style="font-weight:600; font-size:0.9rem;">Saikishor's AI Persona</span>
+            <div class="ai-chat-header">
+                <div class="ai-header-info">
+                    <div class="ai-avatar-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div>
+                        <div class="ai-title">Saikishor's AI Persona</div>
+                        <div class="ai-subtitle"><span class="online-indicator"></span> Intelligent Assistant • Online</div>
+                    </div>
                 </div>
-                <button id="ai-close-btn" class="modal-close" style="width:28px; height:28px;"><i class="fas fa-times"></i></button>
+                <div class="ai-header-actions">
+                    <button id="ai-sound-btn" class="ai-action-btn" title="Toggle Sound Feedback">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button id="ai-clear-btn" class="ai-action-btn" title="Clear Chat History">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <button id="ai-close-btn" class="ai-action-btn" title="Close Chat">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
             </div>
 
             <div id="ai-messages" class="ai-chat-messages">
                 <div class="ai-msg bot">
-                    Hello! I'm Saikishor's AI Assistant. Ask me about his software engineering experience, projects, skills, or education!
+                    Hello! I'm <strong>Saikishor's AI Persona</strong>. I can answer questions about his software engineering background, technical stack (.NET, PHP, C#, MySQL), enterprise projects, MCA education, and career aspirations!
                 </div>
             </div>
 
-            <div style="padding:0.75rem; border-top:1px solid var(--border-subtle); display:flex; gap:0.5rem;">
-                <input type="text" id="ai-input" class="form-control" style="padding:0.5rem 0.75rem; font-size:0.85rem;" placeholder="Ask a question..." autocomplete="off">
-                <button id="ai-send-btn" class="btn btn-primary" style="padding:0.5rem 0.85rem; font-size:0.85rem;"><i class="fas fa-paper-plane"></i></button>
+            <!-- Quick Suggestion Chips -->
+            <div id="ai-suggestion-chips" class="ai-suggestion-chips">
+                <button class="ai-chip" data-query="What are Saikishor's top skills?">⚡ Tech Stack</button>
+                <button class="ai-chip" data-query="Tell me about his work experience">💼 Experience</button>
+                <button class="ai-chip" data-query="What projects has he built?">🚀 Projects</button>
+                <button class="ai-chip" data-query="Show education and degree">🎓 Education</button>
+                <button class="ai-chip" data-query="How can I contact Saikishor?">📩 Contact</button>
+                <button class="ai-chip" data-query="Can I view or download his CV?">📄 Resume</button>
+            </div>
+
+            <div class="ai-chat-footer">
+                <input type="text" id="ai-input" class="form-control ai-input-field" placeholder="Ask Saikishor's AI (e.g., 'What is ChitLAN?')..." autocomplete="off">
+                <button id="ai-send-btn" class="btn btn-primary ai-send-btn" title="Send Message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
             </div>
         </div>
     </div>
